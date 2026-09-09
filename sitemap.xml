@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Domaine du site : https://devcenter.vercel.app
+  A mettre a jour si un nom de domaine personnalise est acquis par la suite.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://devcenter.vercel.app/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://devcenter.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://devcenter.vercel.app/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devcenter.vercel.app/" />
+  </url>
+
+  <url>
+    <loc>https://devcenter.vercel.app/services/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://devcenter.vercel.app/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://devcenter.vercel.app/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devcenter.vercel.app/services/" />
+  </url>
+
+  <url>
+    <loc>https://devcenter.vercel.app/mentions-legales/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://devcenter.vercel.app/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://devcenter.vercel.app/en/legal-notice/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devcenter.vercel.app/mentions-legales/" />
+  </url>
+
+  <url>
+    <loc>https://devcenter.vercel.app/en/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://devcenter.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://devcenter.vercel.app/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devcenter.vercel.app/" />
+  </url>
+
+  <url>
+    <loc>https://devcenter.vercel.app/en/services/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://devcenter.vercel.app/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://devcenter.vercel.app/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devcenter.vercel.app/services/" />
+  </url>
+
+  <url>
+    <loc>https://devcenter.vercel.app/en/legal-notice/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://devcenter.vercel.app/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://devcenter.vercel.app/en/legal-notice/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devcenter.vercel.app/mentions-legales/" />
+  </url>
+
+</urlset>
