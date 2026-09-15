@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <script>
+      (function () {
+        try {
+          var saved = window.localStorage.getItem('dev-center-theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = saved ? saved === 'dark' : Boolean(prefersDark);
+          if (isDark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+    <title>Serveur Discord — Services Dev Center</title>
+    <meta name="description" content="Création de serveur Discord personnalisé : offres Starter, Boss et Master, avec leurs prix en crédits et ce qui est inclus dans chaque formule." />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" type="image/png" href="../../assets/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.png" sizes="256x256" />
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+    <link rel="alternate" hreflang="fr" href="https://devcenter.vercel.app/services/serveur-discord/" />
+    <link rel="alternate" hreflang="en" href="https://devcenter.vercel.app/en/services/discord-server/" />
+    <link rel="alternate" hreflang="x-default" href="https://devcenter.vercel.app/services/serveur-discord/" />
+    <link rel="canonical" href="https://devcenter.vercel.app/services/serveur-discord/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/style.css">
+  </head>
+  <body>
+    <div class="dev-page">
+      <header class="topbar">
+        <div class="container-wide nav">
+          <a href="../../index.html#accueil" class="brand"><img class="brand-mark" src="../../assets/favicon.png" alt="" aria-hidden="true" width="28" height="28" /><span>Dev Center</span></a>
+
+          <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+            <a href="../../index.html#esprit">L’esprit</a>
+            <a href="../../index.html#projets">Les projets</a>
+            <a href="../../index.html#methode">La méthode</a>
+            <a href="../../index.html#communaute">La communauté</a>
+            <a href="../" class="active">Services</a>
+            <!-- Visible uniquement sur mobile : sans ce lien, le bouton Discord disparaissait du menu ouvert. -->
+            <a class="button button-primary nav-links-cta" href="https://discord.gg/AyUYs5XaGn" target="_blank" rel="noreferrer">
+              Rejoindre le Discord
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+            </a>
+          </nav>
+
+          <div class="nav-actions">
+            <a class="lang-switch" href="../../en/services/discord-server/" aria-label="Switch to English">EN</a>
+            <button class="icon-button" type="button" id="theme-toggle" aria-label="Activer le thème sombre">
+              <svg id="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+              <svg id="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </button>
+            <a class="button button-primary" href="https://discord.gg/AyUYs5XaGn" target="_blank" rel="noreferrer">
+              Rejoindre le Discord
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+            </a>
+            <button class="icon-button menu-button" type="button" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+              <svg id="icon-menu" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg id="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="container-wide">
+            <a href="../" class="legal-back">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+              Tous les services
+            </a>
+            <div class="eyebrow">Serveur Discord</div>
+            <h1 class="serif">Un serveur qui vous ressemble</h1>
+            <p>De la structure de base à un espace entièrement pensé sur-mesure, trois formules pour lancer ou faire évoluer votre serveur.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container-wide">
+            <div class="pricing-grid reveal-group">
+              <div class="pricing-card reveal">
+                <div class="pricing-card-head">
+                  <h3>Starter</h3>
+                  <div class="pricing-price is-free"><strong>Gratuit</strong></div>
+                </div>
+                <p class="pricing-desc">Pour démarrer proprement, sans rien débourser.</p>
+                <ul class="pricing-features">
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Salon personnalisé</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Rôle personnalisé</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>Pas de permissions</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>Limite : 1 serveur / personne</li>
+                </ul>
+                <a class="button button-quiet" href="https://discord.gg/AyUYs5XaGn" target="_blank" rel="noreferrer">Choisir Starter</a>
+              </div>
+
+              <div class="pricing-card reveal">
+                <div class="pricing-card-head">
+                  <h3>Boss</h3>
+                  <div class="pricing-price"><strong>200</strong><span>Crédits</span></div>
+                </div>
+                <p class="pricing-desc">Pour un serveur plus structuré et plus vivant.</p>
+                <ul class="pricing-features">
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Salon personnalisé</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Rôle personnalisé</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Permissions configurées</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Support prioritaire</li>
+                </ul>
+                <a class="button button-quiet" href="https://discord.gg/AyUYs5XaGn" target="_blank" rel="noreferrer">Choisir Boss</a>
+              </div>
+
+              <div class="pricing-card featured reveal">
+                <span class="pricing-badge">Plus populaire</span>
+                <div class="pricing-card-head">
+                  <h3>Master</h3>
+                  <div class="pricing-price"><strong>400</strong><span>Crédits</span></div>
+                </div>
+                <p class="pricing-desc">La formule complète pour un serveur entièrement sur-mesure.</p>
+                <ul class="pricing-features">
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Salon personnalisé</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Rôle personnalisé</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Permissions configurées</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Support prioritaire</li>
+                  <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Configuration bot incluse</li>
+                </ul>
+                <a class="button button-primary" href="https://discord.gg/AyUYs5XaGn" target="_blank" rel="noreferrer">Choisir Master</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="footer-cta">
+          <div class="container-wide reveal">
+            <div class="eyebrow">Une question sur cette offre ?</div>
+            <h2 class="serif">Venez en discuter<br /><em>directement sur le Discord.</em></h2>
+            <p>L’équipe Dev Center répond à vos questions sur les formules, les crédits et les délais avant toute commande.</p>
+            <a class="button button-primary" href="https://discord.gg/AyUYs5XaGn" target="_blank" rel="noreferrer">
+              Rejoindre le Discord
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container-wide">
+          <div class="footer-inner reveal-group">
+            <div class="footer-brand-col reveal">
+              <a href="../../index.html#accueil" class="brand"><img class="brand-mark" src="../../assets/favicon.png" alt="" aria-hidden="true" width="28" height="28" /><span>Dev Center</span></a>
+              <small>Une communauté anglophone pour créer sur internet.</small>
+            </div>
+            <div class="footer-col reveal">
+              <h4>Explorer</h4>
+              <div class="footer-links">
+                <a href="../../index.html#esprit">L’esprit</a>
+                <a href="../../index.html#projets">Les projets</a>
+                <a href="../../index.html#methode">La méthode</a>
+                <a href="../../index.html#communaute">La communauté</a>
+                <a href="../">Services</a>
+              </div>
+            </div>
+            <div class="footer-col reveal">
+              <h4>Rejoindre</h4>
+              <div class="footer-links">
+                <a href="../../index.html#rejoindre">Nous rejoindre</a>
+                <a href="https://discord.gg/AyUYs5XaGn" target="_blank" rel="noreferrer">Discord</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <small>© <span id="current-year"></span> Dev Center · Développé avec ♥️ par Joan</small>
+            <a href="../../mentions-legales/">Mentions légales</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../assets/main.js"></script>
+  </body>
+</html>
